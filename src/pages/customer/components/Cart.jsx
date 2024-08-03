@@ -71,7 +71,7 @@ const Cart = ({ setIsCartOpen }) => {
         console.log(currentUser);
         dispatch(updateCurrentUser(currentUser, currentUser._id));
         setIsCartOpen(false)
-        navigate("/product/Checkout")
+        navigate("/Checkout")
     }
 
     const priceContainerRef = useRef(null);
