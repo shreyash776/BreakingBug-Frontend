@@ -48,13 +48,18 @@ const Navbar = () => {
     const openSign = Boolean(anchorElSign);
 
     const [isCartOpen, setIsCartOpen] = React.useState(false);
+ 
+       //  FIRST BUG
+    //--->  FIXED THE SYNTEX ERROR FOR OPENING  THE CART AND CLOSING THE CART  <----
 
-    // Cart
-    const handleOpen Cart = () => {
+    // Cart OPEN
+    const handleOpenCart = () => {
         setIsCartOpen(true);
     };
-
-    const handleOpenCart = () => {
+    
+    // SECOND BUG (FUNCTION NAME WAS OF THE SAME NAME AS ABOVE CAUSING FUNCTION OVERRIDING)
+    
+    const handleCloseCart = () => {
         setIsCartOpen(false);
     };
 
